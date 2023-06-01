@@ -9,7 +9,7 @@ function startTime() {
     setTimeout(startTime, 1000);
 }
 
-function checkTime() {
+function checkTime(i) {
     if (i < 10) { i = "0" + i };
     return i;
 }
