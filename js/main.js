@@ -1,12 +1,12 @@
 function startTime() {
     const today = new Date();
     let hour = today.getHours();
-    let minutes = today.getMinutes();
-    let seconds = today.getSeconds();
-    minutes = checkTime(minutes);
-    seconds = checkTime(seconds)
-document.getElementById("time").innerHTML = hour + ':' + minutes + ':' + seconds;
-setTimeout(startTime, 1000);
+    let mins = today.getMinutes();
+    let secs = today.getSeconds();
+    mins = checkTime (mins);
+    secs = checkTime(secs)
+    document.getElementById('clock').innerHTML = hour + ":" + mins + ":" + secs;
+    setTimeout(startTime, 1000);
 }
 
 function checkTime() {

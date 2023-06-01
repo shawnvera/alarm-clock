@@ -6,17 +6,17 @@
     <link rel="stylesheet" href="/css/style.css" />
     <script src="/js/main.js" defer></script>
 </head>
-<body>
+<body onload="startTime()">
     <header>
         Digital Alarm Clock </br>
         <img height="300" width="450" src="https://cdn.pixabay.com/photo/2018/02/01/06/38/alarm-3122687_1280.png" alt="an alarm clock">
         <div>
-            <label for="time">Time</label>
+            <label>Time</label>
             <input type="time" id="alarm-time"></input>
             <button onclick="">Set Alarm Clock</button>
         </div>
 
-        <div id="time"></div>
+        <div id="clock></div>
 
     </header>
 </body>
