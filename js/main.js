@@ -2,10 +2,10 @@
 
 const getTimeString = ({ hours, minutes, seconds, zone }) => {
   if (minutes / 10 < 1) {
-      minutes = "0" + minutes;
+    minutes = "0" + minutes;
   }
   if (seconds / 10 < 1) {
-      seconds = "0" + seconds;
+    seconds = "0" + seconds;
   }
   return `${hours}:${minutes}:${seconds}:${zone}`;
 };
@@ -19,9 +19,9 @@ const renderTime = () => {
   var seconds = currentDate.getSeconds();
   var zone = hours >= 12 ? "PM" : "AM";
   if (hours > 12) {
-      hours = hours % 12;
+    hours = hours % 12;
   }
-  const timeString = getTimeString({ hours, minutes, seconds, zone});
+  const timeString = getTimeString({ hours, minutes, seconds, zone });
   currentTime.innerHTML = timeString;
 }
 
@@ -31,14 +31,14 @@ setInterval(renderTime, 1000);
 
 const alarmsArray = [];
 let userAlarm;
-function alarmTimer () {
+function alarmTimer() {
   userAlarm = document.getElementById('alarm').value;
   document.getElementById('clock').innerHTML = userAlarm;
   alarmsArray.push(userAlarm.value);
-  
+
 }
-for (let i = 0; i < alarmsArray.length; i++){
-console.log(alarmsArray[i]);
+for (let i = 0; i < alarmsArray.length; i++) {
+  console.log(alarmsArray[i]);
 }
 
 

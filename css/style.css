@@ -11,8 +11,8 @@ header {
     font-size: 20px;
     text-align: center;
     padding: 50px, 50px;
-    box-shadow: 0 0 50px rgba(0,0,0,5);
-    font-family:fantasy
+    box-shadow: 0 0 50px rgba(0, 0, 0, 5);
+    font-family: fantasy
 }
 
 .input-box {
@@ -22,7 +22,7 @@ header {
 
 #set-alarm {
     font-size: large;
-    box-shadow: 0 0 50px rgba(0,0,0,5);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 5);
     padding: 1px;
     color: whitesmoke;
     font-family: fantasy;
