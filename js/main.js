@@ -1,3 +1,4 @@
+
 // function to convert time to string value and adding 0 if under 10.
 const getTimeString = ({ hours, minutes, seconds, zone }) => {
   if (minutes / 10 < 1) {
@@ -22,14 +23,15 @@ const renderTime = () => {
   }
   const timeString = getTimeString({ hours, minutes, seconds, zone });
   currentTime.innerHTML = timeString;
-};
+}
 
 // Update time every second
 setInterval(renderTime, 1000);
 
 const alarmsArray = [];
-let userAlarm;
+
 function alarmTimer(e) {
+  let userAlarm;
   userAlarm = document.getElementById('alarm').value;
   document.getElementById('clock').innerHTML = userAlarm;
   alarmsArray.push(userAlarm);
@@ -38,18 +40,8 @@ function alarmTimer(e) {
     console.log(alarmsArray[i]);
     let alarms = document.getElementById("active-alarms");
     alarms.innerHTML = alarmsArray;
+  }
 }
-}
 
-
-
-
-
-
-
-
-
-
-
-
-
+let myBtn = document.getElementById("btn");
+myBtn.addEventListener('click', alarmTimer());
