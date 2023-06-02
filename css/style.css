@@ -1,0 +1,30 @@
+body {
+    background-color: powderblue
+}
+
+header {
+    text-align: center;
+}
+
+.time-display {
+    background-color: paleturquoise;
+    font-size: 20px;
+    text-align: center;
+    padding: 50px, 50px;
+    box-shadow: 0 0 50px rgba(0,0,0,5);
+    font-family:fantasy
+}
+
+.input-box {
+    padding: 50px;
+    font-size: large;
+}
+
+#set-alarm {
+    font-size: large;
+    box-shadow: 0 0 50px rgba(0,0,0,5);
+    padding: 1px;
+    color: whitesmoke;
+    font-family: fantasy;
+    background-color: royalblue;
+}
