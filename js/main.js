@@ -44,4 +44,4 @@ function alarmTimer(e) {
 }
 
 let myBtn = document.getElementById("btn");
-myBtn.addEventListener('click', alarmTimer());
+myBtn.addEventListener('click', alarmTimer);
